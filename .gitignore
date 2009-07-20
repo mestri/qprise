@@ -1,0 +1,15 @@
+# .gitignore for Grails 1.1
+
+.idea/
+stacktrace.log
+test/reports/
+etc/errors.txt
+bin-groovy/
+.classpath
+.project
+*.war
+web-app/plugins/
+web-app/resources/
+classes/
+test/reports/
+
