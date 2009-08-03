@@ -1,10 +1,13 @@
 class BootStrap {
 
-     def init = { servletContext ->
-	
-		new PopulateData().fillData()
+    def authenticateService
 
-     }
-     def destroy = {
-     }
+    def init = { servletContext ->
+	
+        new PopulateData().fillData(authenticateService)
+
+    }
+    
+    def destroy = {
+    }
 } 

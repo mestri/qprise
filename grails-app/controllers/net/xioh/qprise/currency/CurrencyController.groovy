@@ -14,50 +14,50 @@ class CurrencyController {
         [ currencyInstanceList: Currency.list( params ), currencyInstanceTotal: Currency.count() ]
     }
 
-	def currencyDetail = {
-		render(template:"currencyDetail", model:[currency:Currency.get(params.id)])
-	}
+    def currencyDetail = {
+        render(template:"currencyDetail", model:[currency:Currency.get(params.id)])
+    }
 
-	def myDataTableJSON = {
-		def currencys = Currency.list(params)
-		def currencysList = currencys.collect {
-			[
-				id: it.id,
-				description: it.description,
-				dataUrl: g.createLink(action: 'show', id: it.id)
-			]
-		}
+    def myDataTableJSON = {
+        def currencys = Currency.list(params)
+        def currencysList = currencys.collect {
+            [
+                id: it.id,
+                description: it.description,
+                dataUrl: g.createLink(action: 'show', id: it.id)
+            ]
+        }
 		
-		def data = [
-			totalRecords: Currency.count(),
-			results: currencysList
-		]
+        def data = [
+            totalRecords: Currency.count(),
+            results: currencysList
+        ]
 		
 		
-		render data as JSON
-	}
+        render data as JSON
+    }
 
 
 
-	def dataTableJSON = {
-		def currencys = Currency.list(params)
-		def list = []
-		currencys.each {
-			list << [
-				id: it.id,
-				description: it.description,
-				dataUrl: g.createLink(action: 'show')
-			]
-		}
+    def dataTableJSON = {
+        def currencys = Currency.list(params)
+        def list = []
+        currencys.each {
+            list << [
+                id: it.id,
+                description: it.description,
+                dataUrl: g.createLink(action: 'show')
+            ]
+        }
 		
-		def data = [
-			totalRecords: Currency.count(),
-			results: currencys
-		]
+        def data = [
+            totalRecords: Currency.count(),
+            results: currencys
+        ]
 		
 		
-		render data as JSON
-	}
+        render data as JSON
+    }
 
     def show = {
         def currencyInstance = Currency.get( params.id )

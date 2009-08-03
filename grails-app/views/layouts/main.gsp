@@ -23,10 +23,6 @@
                <h1>qPrise</h1>
             </div>
 
-			<!-- <div id="menubar">
-               <g:render template="/common/menubar" />
-            </div> -->
-
 			<div id="content">
 				<g:layoutBody />
 			</div>
