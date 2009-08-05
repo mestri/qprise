@@ -20,7 +20,7 @@
         </div>
 
         <div id="header">
-            <h1>qPrise</h1>
+            <h1>qPrise ERP Software</h1>
         </div>
 
         <div id="content">
