@@ -80,6 +80,13 @@ body {
     font-size: 10px;
 }
 
+
+#about {
+    clear:both;
+    text-align: center;
+    padding: 3px;
+}
+
 a:link, a:visited, a:hover {
     color: #666;
     font-weight: bold;
