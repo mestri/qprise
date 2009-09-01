@@ -5,10 +5,16 @@
         <link rel="shortcut icon" href="${createLinkTo(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
     <g:layoutHead />
     <g:javascript library="application" />
-
     <gui:resources components="['menu', 'dialog', 'accordion', 'dataTable', 'richEditor']"/>
+    <!--<nav:resources/>-->
 </head>
 <body class="yui-skin-sam">
+
+<!--    <div id="menu">
+        <nav:render group="tabs"/>
+        
+    </div>
+-->
     <div id="page">
         <div id="spinner" class="spinner" style="display: none;">
             <img src="${createLinkTo(dir:'images',file:'spinner.gif')}"
