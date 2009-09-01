@@ -3,6 +3,17 @@ package net.xioh.qprise.currency
 import grails.converters.*
 
 class CurrencyController {
+
+    static navigation = [
+        group:'tabs',
+        order:10,
+        title:'Moneda',
+        action:'index',
+        subItems: [
+            [action:'index', order:1, title:"Inbox"],
+            [action:'index', order:10, title:'Old items']
+        ]
+    ]
     
     def index = { redirect(action:list,params:params) }
 

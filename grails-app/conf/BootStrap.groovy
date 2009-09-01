@@ -4,7 +4,7 @@ class BootStrap {
 
     def init = { servletContext ->
 	
-        new PopulateData().fillData(authenticateService)
+//        new PopulateData().fillData(authenticateService)
 
     }
     
