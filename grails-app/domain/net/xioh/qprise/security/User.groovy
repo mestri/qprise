@@ -36,6 +36,6 @@ class User {
 	}
 
         String toString() {
-            "${id} - ${userRealName} arnold lane"
+            "${id} - ${userRealName}"
         }
 }
