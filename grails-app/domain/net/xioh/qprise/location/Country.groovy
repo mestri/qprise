@@ -23,6 +23,8 @@ class Country {
     Double IBanNoDigits//revisar tipo dato
     String IBanCountry
 
+    String nada
+
     static constraints = {
     }
 }
