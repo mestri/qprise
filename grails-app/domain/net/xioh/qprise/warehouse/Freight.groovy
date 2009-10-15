@@ -5,7 +5,7 @@ import net.xioh.qprise.location.*
 class Freight {
 
     Boolean isActive
-    Shipper shipper
+    //Shipper shipper
     FreightCategory freightCategory
     Date validFrom
     Country country
@@ -20,6 +20,8 @@ class Freight {
     BigDecimal qtyFrom
     BigDecimal qtyTo
     String totalRound
+
+    static belonsTo = [Shipper, FreightCategory]
 
     static constraints = {
     }

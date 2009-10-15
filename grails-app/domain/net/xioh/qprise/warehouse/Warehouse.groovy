@@ -8,7 +8,7 @@ import net.xioh.qprise.location.*
  */
 class Warehouse {
 	Boolean isActive
-    String value
+        String value
 	String name
 	String description
 	Location location
@@ -17,6 +17,8 @@ class Warehouse {
 	String shipperCode
 	Integer fromDocumentNo
 	Integer toDocumentNo
+
+        static hasMany =[locators: Locator, warehouseShippers: WarehouseShipper]
 
     static constraints = {
     }

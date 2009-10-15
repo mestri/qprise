@@ -11,6 +11,8 @@ class FreightCategory {
     String lineRound
     String totalRound
 
+    static hasMany = [freightCategorys: FreightCategory]
+
     static constraints = {
     }
 }

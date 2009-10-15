@@ -7,7 +7,10 @@ class Shipper {
 	Boolean isActive
 	String name
 	String description
-	BusinessPartner businessPartner
+	//BusinessPartner businessPartner
+
+        static belongsTo = [BusinessPartner]
+        static hasMany = [freigths: Freight]
 
     static constraints = {
     }

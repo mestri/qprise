@@ -5,9 +5,11 @@ import net.xioh.qprise.businessPartner.*
 class WarehouseShipper {
 
 	Boolean isActive
-	Warehouse warehouse
-	BusinessPartner businessPartner
+	//Warehouse warehouse
+	//BusinessPartner businessPartner
 	Integer seqNo
+
+        static belongsTo = [Warehouse, BusinessPartner]
 
     static constraints = {
     }

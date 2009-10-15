@@ -3,12 +3,12 @@ dataSource {
     driverClassName = "com.mysql.jdbc.Driver"
     username = "qprise"
     password = "sesamo"
-	
+
     //	pooled = true
     //	driverClassName = "org.hsqldb.jdbcDriver"
     //	username = "sa"
     //	password = ""
-	
+
 }
 hibernate {
     bytecode.provider=cglib
@@ -47,7 +47,7 @@ hibernate {
 environments {
     development {
         dataSource {
-            dbCreate = "update" // one of 'create', 'create-drop','update'
+            dbCreate = "create-drop" // one of 'create', 'create-drop','update'
             //url = "jdbc:mysql://onix.xioh.net:3306/qprise_devdb"
             url = "jdbc:mysql://localhost:3306/qprise_devdb"
         }
@@ -66,3 +66,4 @@ environments {
         }
     }
 }
+

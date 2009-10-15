@@ -1,5 +1,7 @@
 package net.xioh.qprise.businessPartner
 
+import net.xioh.qprise.warehouse.*
+
 class BusinessPartner {
 	Boolean isActive = true
 	String name
@@ -65,7 +67,7 @@ class BusinessPartner {
 	String isoFiscalCode
 
 	static belongsTo = [BusinessPartnerGroup]
-	static hasMany = [locations : BusinessPartnerLocation]
+	static hasMany = [locations : BusinessPartnerLocation, warehouseShippers: WarehouseShipper, shippers: Shipper]
 
     static constraints = {
     }
